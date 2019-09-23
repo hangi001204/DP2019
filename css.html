@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>css</title>
+        <a href="index.html" onclick="history.back(index2.html); return false;">뒤로가기</a>
+<link rel="stylesheet" type="text/css" href="default.css">
+<br>
+<br>
+        <style>
+            a{
+                /*요소 선택자*/
+                color: red
+            }
+            .c_name{
+                /*클래스 선택자*/
+                color: blue
+            }
+            #i_name{
+                /*아이디 선택자*/
+            color: pink
+          }
+          #i_name2:before{
+              content: "시작";
+          }
+          #i_name2:after{
+              content: "**";
+          }
+          #i_name2:first-letter{
+              font-size: 60px;
+          }
+          #i_name2:first-line{
+              color: blueviolet;
+          }
+          .con:first-child{
+              color: aqua
+          }
+          .con:last-child{
+              color: slateblue
+          }
+          .con:nth-child(4){
+              color: darkmagenta
+          }
+        </style>
+    </head>
+    <body>
+      <a>내용1</a>
+      <div class="c_name">클래스</div>
+      <div id="i_name">아이디</div>
+      <div id="i_name2">가상요소 선택자 가상요소 선택자 가상요소 선택자 <br>가상요소 선택자 가상요소 선택자</div>
+      <ul>
+          <li class="con">내용1</li>
+          <li class="con">내용2</li>
+          <li class="con">내용3</li>
+          <li class="con">내용4</li>
+          <li class="con">내용5</li>
+
+      </ul>
+      <style>
+     a:link{
+         color: black;
+         text-decoration: none;
+     }
+     a:visited{
+         color: green;
+         text-decoration: none;
+     }
+     a:hover{
+         color: red
+     }
+     a:active{
+         color:yellow
+     }
+     a:focus{
+         color: pink
+     }
+      </style>
+       <a href="a">링크버튼</a>
+
+      </html>
