@@ -76,4 +76,133 @@
       </style>
        <a href="a">링크버튼</a>
 
+
+<style>
+#boxmodel1{
+    background-color: #dddddd;
+    width: 100px;
+    height: 200px;
+    margin: 100px;  /*바깥여백*/
+    padding: 100px;  /*안쪽여백*/
+    border: solid 1px red;  /*경계: 선종류, 선두께, 선색깔*/
+}
+</style>
+       <div id="boxmodel1">박스모델1</div>
+
+
+
+
+       <style>
+/*하위요소선택자, 띄어쓰기*/
+ div li{
+     color: coral;
+}
+/*상위요소선택자, >부등호기호*/
+div>ul>li{
+   text-decoration: underline;
+}
+/*선택자그룹화, 쉼표(,)*/
+div,ul,li{
+    color: blueviolet;
+    color: #000; /*3자리 컬러코드#rgb*/
+    color: #000000; /*6자리 컬러코드#rrggbb*/
+    color: rgb(0,0,255); /*0~255*/
+    color: rgb(0%,0%,100%); /*0%~100%*/
+}
+       </style>
+<div style="color: blue">
+    container
+<ul>
+    <li>리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+</ul>
+
+</div>
+
+
+<style>
+.position_test{
+    background-color: #dddd;
+/*static 정적인(기본)*/
+position: static;
+/*absolute절대적인*/
+position: absolute;
+top: 100px;
+left: 100px;
+position: fixed;
+
+}
+</style>
+<div class="position_test">
+    position_test
+</div>
+
+<style>
+    .font_test{
+    font-family: "Norwester","굴림", Gulim, sans-serif;
+    /*small,large,midium*/
+    font-size: 40px;
+    /*normal,bold,bolder*/
+    font-weight: bolder;
+    /*normal,italic,oblique*/
+    font-style: italic;
+    /*normal,small-caps*/
+    font-variant: small-caps;
+    text-align: center;
+    height: 350px;
+    background-color: #ddd;
+    vertical-align: text-top;
+    /*none, underline, overline,line_throught*/
+    text-decoration: underline;
+
+
+}
+
+</style>
+<div class="font_test">
+    AbcDEFgHijK
+    font_test
+    <img src="./images/bread.jpg" width="150px"/>
+</div>
+
+
+
+<style>
+.letter_line{
+     /*글자간격*/
+    letter-spacing: 10px;
+    /*줄간격*/
+    line-height: 30px;
+    /*들여쓰기*/
+    text-indent: 50px;
+}
+</style>
+
+
+<div class="letter_line">
+        letter_line
+        사실은 주목할 만하다. “몇몇 사람들이 데모크리토스의 제자라고 믿고 있 는 코스의 히포크라테스는 가장 먼, 그리고 가장 요하게 기억할 필요 가 있는 사람인데, 그는 문기술과 웅변술로 뛰어날 뿐만 아니라 이 분야 의 지식을 철학 연구로부터 독립시켰다”는 것이다.4) 주아나의 표을 빌려 다시 설명하면 의학을 철학으로부터 분리시키는데 성공했다는 의미에서 수스는 히포크라테스를 ‘의학의 진정한 창시자 true founder of medicine’ 로 인정하고 있는 것이다. 수스뿐만 아니라 로마의사인 스크니보니우스 라르구스와 박물학자인 리니우스도 비슷한 견해다면서, 주아나는 그리스 의학사를 다음과 같이 개한다. 먼 의학의 발견자로서 아스클 피오스가 신격화되었고, 호메로스시 동안 외과수술이 발했지만 이후 몇 세기 동안 암흑기가 이어지다가 마침내 히포크라테스가 핵심 역할을 한 부흥기가 도래했다는 것이다.5) 하지만 이 같은 서술들과 평가는 액면 그로 받아들일 수 있는 것들인 가? 
+</div>
+
+<style>
+.the{
+      /*대소문를 바꿔줌*/
+    text-transform: uppercase;
+}}
+</style>
+
+<div class="the">
+abcdefghigk
+</div>
+<style>
+.pre{
+    white-space: pre;
+}
+</style>
+<div class="pre">
+    123      456
+    7890
+</div>
       </html>
