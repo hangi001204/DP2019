@@ -6,10 +6,16 @@
     <a href="index.html" onclick="history.back(index2.html); return false;">뒤로가기</a>
     <link rel="stylesheet" type="text/css" href="default.css">
         <style>
-        header,nav,div,footer,h1,ul,li,h2,section{
-            color: black
+        body{
+         color: black;
            /* border: solid 1px black; 
             margin: 50px;*/
+        }
+        #wrap{
+            min-width: 1100px;
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
         }
         header>ul>li{
             float: left;
@@ -53,6 +59,71 @@
           #navigation{
               background-color: #eee;
           }
+          dd{
+              margin: 0px;
+          }
+          dt{
+              margin-top: 25px;
+              margin-bottom: 25px;
+              font-weight: bold;
+            }
+            div>section:nth-child(1){
+            background-color: #98f;
+            }
+            div>section:nth-child(2){
+            background-color: #5d9;
+            }
+            div>section:nth-child(3){
+            background-color: #f76;
+            }
+            div>section:nth-child(4){
+            background-color: #ec5;
+            }
+            div>section h3{
+                color: white;
+                margin-top: 45px;
+                margin-bottom: 45px;
+            }
+            .content_part{
+                width: 480px;
+                float: left;/*왼쪽기준으로 둥둥 떠있게*/
+                margin: 10px;
+            }
+        div>section>div{z
+            width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        /*블록형 태그의 가운데 정렬*/
+        }
+        section{
+            padding: 50px;
+        }
+        footer ul>li{
+            list-style: none;
+            float: left;
+        }
+        #footer1>li{
+           padding-left: 10px;
+           padding-right: 10px;
+            border-right: solid 1px #aaa;
+        }
+        #footer_div{float: left;}
+        #footer2{float: right;}
+        footer>p{float: left;}
+        #footer1>li:nth-child(6){
+            border: none;
+        }
+        #footer2>li{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        footer>ul{
+            padding: 0px;
+        }
+        footer{
+            background-color: #333;
+            color: #ddd;
+        }
         </style>
     </head>
     <body>
@@ -80,7 +151,7 @@
                 <div class="clear"></div>
             </header>
             <nav id="navigation">
-                <h2 class="float_left">see our Works</h2>
+                <h2 class="float_left">See Our Works</h2>
                 <ul class="float_right">
                 <li>Web Design</li>
                 <li>Icons</li>
@@ -91,11 +162,12 @@
             <div class="clear"></div>
             
             </nav>
+            <div>
 <section>
     <div>
             <div>
                 <h3>web Design</h3>
-                <div>
+                <div class="content_part">
                     <img src="images/layout1_img1.jpg" alt="">
                     <dl>    
                         <dt>    
@@ -109,7 +181,8 @@
                     
                     </dl>
                 </div>
-                <div>  <img src="images/layout1_img2.jpg" alt="">
+                <div class="content_part">  
+                    <img src="images/layout1_img2.jpg" alt="">
                     <dl>    
                         <dt>    
                                 Lorem ipsum dolor sit amet
@@ -122,13 +195,14 @@
                     
                     </dl>
                 </div>
+                <div class="clear"></div>
     </div>
 </section>
                 <section> 
                      <div>
                         <div>
                             <h3>web Design</h3>
-                            <div>
+                            <div class="content_part">
                                 <img src="images/layout1_img3.jpg" alt="">
                                 <dl>    
                                     <dt>    
@@ -142,7 +216,8 @@
                                 
                                 </dl>
                             </div>
-                            <div>  <img src="images/layout1_img4.jpg" alt="">
+                            <div class="content_part"> 
+                                 <img src="images/layout1_img4.jpg" alt="">
                                 <dl>    
                                     <dt>    
                                             Lorem ipsum dolor sit amet
@@ -155,14 +230,15 @@
                                 
                                 </dl>
                             </div>
-                </div
-                ></section>
+                            <div class="clear"></div>
+                </div>
+            </section>
 
                 <section> 
                      <div>
                         <div>
                             <h3>web Design</h3>
-                            <div>
+                            <div class="content_part">
                                 <img src="images/layout1_img5.jpg" alt="">
                                 <dl>    
                                     <dt>    
@@ -176,7 +252,8 @@
                                 
                                 </dl>
                             </div>
-                            <div>  <img src="images/layout1_img6.jpg" alt="">
+                            <div class="content_part"> 
+                                 <img src="images/layout1_img6.jpg" alt="">
                                 <dl>    
                                     <dt>    
                                             Lorem ipsum dolor sit amet
@@ -189,6 +266,7 @@
                                 
                                 </dl>
                             </div>
+                            <div class="clear"></div>
                 </div>
             </section>
 
@@ -196,7 +274,7 @@
                     <div>
                         <div>
                             <h3>web Design</h3>
-                            <div>
+                            <div class="content_part">
                                 <img src="images/layout1_img7.jpg" alt="">
                                 <dl>    
                                     <dt>    
@@ -210,7 +288,8 @@
                                 
                                 </dl>
                             </div>
-                            <div>  <img src="images/layout1_img8.jpg" alt="">
+                            <div class="content_part">  
+                                <img src="images/layout1_img8.jpg" alt="">
                                 <dl>    
                                     <dt>    
                                             Lorem ipsum dolor sit amet
@@ -223,10 +302,36 @@
                                 
                                 </dl>
                             </div>
+                            <div class="clear"></div>
                 </div>
             </section>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div id="footer_div">
+                <ul id="footer1">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                    <div class="clear"></div>
+                </ul>
+                <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
+                <p>the loges in the design are the property of their respective owners/copyright holders.</p>
+            </div>
+                <ul id="footer2">
+                    <li> <img src="images/layout1_footer_icon1.png"> </li>
+                    <li> <img src="images/layout1_footer_icon2.png"></li>
+                    <li> <img src="images/layout1_footer_icon3.png"></li>
+                    <li> <img src="images/layout1_footer_icon4.png"></li>
+                    <li> <img src="images/layout1_footer_icon5.png"></li>
+                    <li> <img src="images/layout1_footer_icon6.png"></li>
+                    <div class="clear"></div>
+                </ul>
+                 <div class="clear"></div>
+
+            </footer>
  
         </div>
     </body>
